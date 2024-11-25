@@ -1,0 +1,76 @@
+ body{
+            background-image: url('./bg.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        #sign{
+            display: flex;
+            border-radius: 20px;
+            margin-top: 10%;
+            margin-left: 20%;
+            border-radius: 20px;
+            width: 700px;
+            height: fit-content;
+            border-radius: 20px;
+            overflow: hidden;
+
+        }
+        #sign #leftside{
+            padding-left: 30px;
+            background-color: rgb(16, 16, 16);
+            width: 300px;
+            
+        }
+          #sign #leftside h3{
+            padding-top: 20px;
+            color: rgb(230, 227, 227);
+          }
+          #sign #leftside label{
+            color: rgb(230, 227, 227);
+          }
+        #sign #leftside input{
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid beige;
+            margin: 10px 0px;
+        }
+        #sign #leftside button{
+            background-color: rgb(66, 65, 65);
+            color: burlywood;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+         #sign #leftside button:hover{
+            background-color:burlywood ;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+         #sign #leftside P{
+            font-size: 15PX;
+            color: beige;
+         }
+         #sign #leftside #icon{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 20px;
+         }
+        #sign #leftside #icon p{
+            color: beige;
+        } 
+        #sign #right{
+            background-image: url(./signup.png);
+             background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 400px;
+            
+        }
+        #sign #right h2{
+            color: beige;
+            padding-left: 20px;
+        }
