@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+    <style>
+        body{
+            background-color: black;
+        }
+        #navbar{
+            background-color: rgb(83, 82, 82,0.5);
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            border-radius: 20px;
+            align-items: center;
+            
+        }
+        #navbar #nav1{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        #navbar #nav1 img{
+            width: 30px;
+            height: 30px;
+        }
+        #navbar #nav1 a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #navbar #nav2{
+            display: flex;
+            justify-self: center;
+            gap: 60px;
+        }
+        #navbar #nav2 a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #navbar #nav3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-right: 20px;
+        }
+        #navbar #nav3 a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #navbar #nav3 img{
+            width: 60px;
+            height: 60px;
+            border-radius: 20px;
+        }
+
+        
+
+    </style>
+    <title>dashboard</title>
+</head>
+<body>
+    <section id="navbar">
+        <div id="nav1">
+            <a href="./dashboard.html"><img src="./logo.png" alt=""></a>
+            <a href="./dashboard.html">m<span style="color: green;">o</span>nex</a>  </div>
+           <div id="nav2">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="">Analytics</a>
+            <a href="">Transactions</a>
+            </div>
+            <div id="nav3">
+                <i class="fa-solid fa-bell" style="color: white;"></i>
+               <img src="./profile.png" alt="">
+                <div id="profile">
+                    <h4 style="color: white;">Account</h4>
+                    <p style="color: grey; margin-top: -20px;" >Manya Sharma</p>
+                </div>
+            </div>
+       
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
