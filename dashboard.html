@@ -59,13 +59,69 @@
             height: 60px;
             border-radius: 20px;
         }
+        #graph{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+             margin-top: 20px;
+        }
+        #ammount {
+            background-color: rgb(83, 82, 82,0.5);
+            margin-top: 20px;
+            height: 250px;
+            width: 300px;
+            border-radius: 20px;
+            padding-left: 40px;
+        }
+        #ammount #heading {
+            display: flex;
+            color: white;
+            gap: 80px;
+            align-items: center;
+            
+        }
+        #ammount #heading #cards{
+            background-color: rgba(101, 101, 101, 0.4);
+            width: 80px;
+            color: white;
+            border-radius: 12px;
 
+        }
+        #ammount #cvv{
+            background-color: rgb(31, 100, 31);
+            color: white;
+            padding-left: 2px;
+            width: 50px;
+            font-size: larger;
+            border-radius: 12px;
+        }
+        #detail{
+            display: flex; 
+            gap: 20px;
+            color: white;
+            font-size: small;
+        }
+        .detail{
+            color: gray;
+             font-size: smaller; 
+        }
+        .value{
+            color: white;
+             font-size: smaller; 
+        }
+        #info{
+            display: flex;
+            flex-direction: column;
+            font-size: smaller; 
+        
+        }
+        
         
 
     </style>
     <title>dashboard</title>
 </head>
 <body>
+    <!-- navbar section  -->
     <section id="navbar">
         <div id="nav1">
             <a href="./dashboard.html"><img src="./logo.png" alt=""></a>
@@ -84,6 +140,43 @@
                 </div>
             </div>
        
+    </section>
+    <!-- Dashboard section -->
+    <section id="graph">
+        <div id="ammount">
+            <div id="heading">
+                <h2>Balance</h2>
+           
+                <div id="card">
+                <select  id="cards">
+            <option value=""> MasterCard </option>
+            <option value="Allen solly"> American Express(Amex)</option> 
+            
+            </select>
+                    
+                </div>
+            </div>
+              <div id="detail">
+                <div id="cvv">
+                <span style="padding-left: 4px;">C</span>
+                <span>V</span>
+                <span>V</span>
+                </div>
+                <div>
+                    ***** &nbsp; &nbsp;&nbsp; 8990
+                </div>
+             </div>
+             <div id="balance">
+                <h3 style="color: white; font-size: 30px; letter-spacing: 2px; font-family: Georgia, 'Times New Roman', Times, serif;">$32,440.90</h3>
+             </div>
+             <div id="info ">
+                <div style="display: flex;">
+                <span class="detail"><p>Available to spend:</p></span> <span class="value"><p>$121,040.00</p></span>  </div>
+                <div style="display: flex; padding-bottom: 5px;">
+                 <span class="detail"><p>Credit limit:</p></span> <span class="value"><p>$520,490.00</p></span>
+                 </div>
+             </div>
+        </div>
     </section>
     <script src="./script.js"></script>
 </body>
