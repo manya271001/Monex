@@ -4,120 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="dashboard.css">
      
-    <style>
-        body{
-            background-color: black;
-        }
-        #navbar{
-            background-color: rgb(83, 82, 82,0.5);
-            display: flex;
-            justify-content: space-between;
-            padding-top: 10px;
-            border-radius: 20px;
-            align-items: center;
-            
-        }
-        #navbar #nav1{
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-        #navbar #nav1 img{
-            width: 30px;
-            height: 30px;
-        }
-        #navbar #nav1 a{
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-        }
-        #navbar #nav2{
-            display: flex;
-            justify-self: center;
-            gap: 60px;
-        }
-        #navbar #nav2 a{
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-        }
-        #navbar #nav3{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 15px;
-            margin-right: 20px;
-        }
-        #navbar #nav3 a{
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-        }
-        #navbar #nav3 img{
-            width: 60px;
-            height: 60px;
-            border-radius: 20px;
-        }
-        #graph{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-             margin-top: 20px;
-        }
-        #ammount {
-            background-color: rgb(83, 82, 82,0.5);
-            margin-top: 20px;
-            height: 250px;
-            width: 300px;
-            border-radius: 20px;
-            padding-left: 40px;
-        }
-        #ammount #heading {
-            display: flex;
-            color: white;
-            gap: 80px;
-            align-items: center;
-            
-        }
-        #ammount #heading #cards{
-            background-color: rgba(101, 101, 101, 0.4);
-            width: 80px;
-            color: white;
-            border-radius: 12px;
-
-        }
-        #ammount #cvv{
-            background-color: rgb(31, 100, 31);
-            color: white;
-            padding-left: 2px;
-            width: 50px;
-            font-size: larger;
-            border-radius: 12px;
-        }
-        #detail{
-            display: flex; 
-            gap: 20px;
-            color: white;
-            font-size: small;
-        }
-        .detail{
-            color: gray;
-             font-size: smaller; 
-        }
-        .value{
-            color: white;
-             font-size: smaller; 
-        }
-        #info{
-            display: flex;
-            flex-direction: column;
-            font-size: smaller; 
-        
-        }
-        
-        
-
-    </style>
     <title>dashboard</title>
 </head>
 <body>
@@ -176,6 +64,12 @@
                  <span class="detail"><p>Credit limit:</p></span> <span class="value"><p>$520,490.00</p></span>
                  </div>
              </div>
+        </div>
+        <div id="stats" style="margin-left: -50px;">
+            <img src="./stats.png" alt="" >
+        </div>
+        <div id="dailyspend">
+            <img src="./totalspend.png" alt=""height="400px" width="400px">
         </div>
     </section>
     <script src="./script.js"></script>

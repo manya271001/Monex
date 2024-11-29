@@ -1,0 +1,146 @@
+ body{
+            background-color: black;
+        }
+        #navbar{
+            background-color: rgba(48, 48, 48, 0.5);
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            border-radius: 20px;
+            align-items: center;
+            
+        }
+        #navbar #nav1{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        #navbar #nav1 img{
+            width: 30px;
+            height: 30px;
+        }
+        #navbar #nav1 a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #navbar #nav2{
+            display: flex;
+            justify-self: center;
+            gap: 60px;
+        }
+        #navbar #nav2 a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #navbar #nav3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-right: 20px;
+        }
+        #navbar #nav3 a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        #navbar #nav3 img{
+            width: 60px;
+            height: 60px;
+            border-radius: 20px;
+        }
+        /* cardss */
+        #graph{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+             margin-top: 20px;
+             justify-content: center;
+             align-items: center;
+             gap: 10px;
+
+        }
+        #ammount {
+            background-color: rgba(48, 48, 48, 0.5);
+            margin-top: 20px;
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            padding-left: 40px;
+        }
+        #ammount #heading {
+            display: flex;
+            color: white;
+            gap: 80px;
+            align-items: center;
+            
+        }
+        #ammount #heading #cards{
+            background-color: rgba(101, 101, 101, 0.4);
+            width: 80px;
+            color: white;
+            border-radius: 12px;
+
+        }
+        #ammount #cvv{
+            background-color: rgb(31, 100, 31);
+            color: white;
+            padding-left: 2px;
+            width: 50px;
+            font-size: larger;
+            border-radius: 12px;
+        }
+        #detail{
+            display: flex; 
+            gap: 20px;
+            color: white;
+            font-size: small;
+        }
+        .detail{
+            color: gray;
+             font-size: smaller; 
+        }
+        .value{
+            color: white;
+             font-size: smaller; 
+        }
+        #info{
+            display: flex;
+            flex-direction: column;
+            font-size: smaller; 
+        
+        }
+        #graph #stats{
+        
+                width: 450px; 
+            height: 300px;
+            overflow: hidden; 
+            position: relative;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+        #stats img{
+            width: 450px;
+            height: 100%;
+            
+            display: block
+        }
+        #dailyspend{
+             width: 400px; 
+            height: 300px;
+            overflow: hidden; 
+            position: relative;
+            border-radius: 20px;
+            margin-top: 20px; 
+        }
+        /* #dailyspend img{
+            width: 450px;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+            border-radius: 20px;
+        } */
+        
+        
+        
