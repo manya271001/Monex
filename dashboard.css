@@ -193,7 +193,30 @@
       #insertData label{
         color: white;
       }
-        
+      #insertData input{
+         background-color: rgba(12, 12, 12, 0.3);
+            border: none;
+            border-bottom: 1px solid rgb(61, 61, 62);
+            color: white;
+            padding: 10px;
+            margin-left: 30px;
+            
+      }
+     #insertData{
+        background-color: rgb(21, 19, 19);
+        box-shadow: 0px 0px  20px rgb(38, 38, 95);
+        width: 300px;
+        padding: 20px;
+        border-radius: 12px;
+         position: absolute;
+            top: 700px;
+            left: 700px;
+     }
+     #btn:hover{
+        color: white;
+        background-color: black;
+
+     }
         
         
         

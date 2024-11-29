@@ -83,7 +83,7 @@
         <div id="search" style="display: flex; gap: 630px; ">
             <h3 style="color: white; text-transform: uppercase; text-align: center;">Transactions</h3>
         <button style="background-color: black;
-            color: rgb(200, 178, 53); padding: 5px 30px; border-radius:12px; border: none;" onclick="insertform()">INSERT</button> </div>
+            color: rgb(200, 178, 53); padding: 5px 30px; border-radius:12px; border: none;" onclick="insertform()" id="btn">INSERT</button> </div>
         <table style="margin-top: 20px;" >
             <thead>
                 <th>Receiver</th>
@@ -99,7 +99,7 @@
       </div>
       </div>
       <form action="" id="editable"></form>
-      <form action="" id="insertData">
+      <form action="" id="insertData" style="display: none;">
           <label for="">Image url</label>
          <input type="text"  id="image"> <br><br>
           <label for="">Receiver</label>
@@ -112,6 +112,8 @@
          <input type="text"  id="amt"> <br><br>
           <label for="">Type</label>
          <input type="text"  id="type2"> <br><br>
+         <button onclick="submitData()" style="background-color: black;
+            color: rgb(200, 178, 53); padding: 5px 130px; border-radius:12px; border: none;" id="btn">SUBMIT</button>
       </form>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 

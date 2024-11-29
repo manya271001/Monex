@@ -149,5 +149,32 @@ async function updateData(id){
         .then(r=>alert("updatedd....!!!!"))
      }
 
+     // INSERT DATA
+
+     function insertform(){
+        document.querySelector("#insertData").style.display="block"
+     }
+     function submitData(){
+        
+        let obj={
+            "img":document.querySelector("#image").value,
+            "recv":document.querySelector("#rec").value ,
+           "date":document.querySelector("#Date").value ,
+           "status": document.querySelector("#Status2").value,
+           "price": document.querySelector("#amt").value,
+           "type":document.querySelector("#type2").value
+        }
+        fetch("http://localhost:3000/Transaction",{
+        method:'POST',
+        headers:{
+           
+            'content-type':'application/json'
+        },
+        
+        body:JSON.stringify(obj)
+    })
+    .then(res=>alert("inserted...!!!!!!"))
+}
+     
 
 
