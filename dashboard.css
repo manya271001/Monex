@@ -18,6 +18,11 @@
             justify-content: center;
             gap: 10px;
         }
+        #navbar #nav2 a:hover {
+        color: rgb(155, 154, 148);
+        text-decoration: underline;
+        transform: scale(1.1);
+        transition: all 0.5s ease-in-out;}
         #navbar #nav1 img{
             width: 30px;
             height: 30px;
@@ -141,6 +146,20 @@
              border: 2px solid rgba(76, 75, 75, 0.5);
             
         }
+        #transaction #search button{
+            background-color: black;
+            color: rgb(200, 178, 53); 
+            padding: 5px 30px; 
+            border-radius:12px; 
+            border: none;
+        }
+        #transaction #search button:hover{
+            background-color: rgba(231, 230, 224, 0.8);
+         color: black;
+        border: 2px solid rgba(200, 178, 53, 0.9);
+        transform: translateY(-1px);
+        transition: all 0.5s ease-in-out;
+        }
         table th{
             width: 200px;
             color: bisque;
@@ -152,6 +171,8 @@
         table img{
             padding-left: -20px;
         }
+        
+
         tr{
             margin-top: 20px;
             border-bottom: 1px solid rgba(76, 75, 75, 0.5) ;
@@ -171,6 +192,13 @@
             border-radius: 12px;
             color: rgb(181, 197, 196);
         }
+        table button:hover {
+          background-color: rgba(255, 255, 255, 0.9);
+         color: black;
+         box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+         cursor: pointer;
+         transition: all 0.3s ease-in-out;
+}
         #editable{
             background-color:rgba(101, 101, 101, 0.4) ;
         }
@@ -212,11 +240,17 @@
             top: 700px;
             left: 700px;
      }
-     #btn:hover{
-        color: white;
-        background-color: black;
-
-     }
+          #insertData button{
+     background-color: black;
+            color: rgb(200, 178, 53); padding: 5px 130px; border-radius:12px; border: none;}
+     #insertData button:hover {
+         background-color: rgba(245, 220, 81, 0.8);
+         color: black;
+        border: 2px solid rgba(200, 178, 53, 0.9);
+        transform: translateY(-3px);
+        transition: all 0.3s ease-in-out;
+}
+   
         
         
         
