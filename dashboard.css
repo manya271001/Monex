@@ -143,14 +143,17 @@
         }
         table th{
             width: 200px;
-            color: beige;
+            color: bisque;
             border: none;
+            text-transform: uppercase;
+            
              
         }
         table img{
             padding-left: -20px;
         }
         tr{
+            margin-top: 20px;
             border-bottom: 1px solid rgba(76, 75, 75, 0.5) ;
             color: white;
         
@@ -162,6 +165,35 @@
         td{
               padding-left: 50px; 
         }
+        table button{
+            background-color: rgba(188, 181, 181, 0.5);
+            border: none;
+            border-radius: 12px;
+            color: rgb(181, 197, 196);
+        }
+        #editable{
+            background-color:rgba(101, 101, 101, 0.4) ;
+        }
+        #editable input{
+            background-color: rgb(10, 6, 6);
+            border: none;
+            border-bottom: 1px solid rgb(61, 61, 62);
+            color: white;
+            padding: 10px;
+            box-shadow: 0px 0px  20px rgb(38, 38, 95);
+
+        }
+        #editable{
+            position: absolute;
+            top: 700px;
+            left: 700px;
+            border: 1px solid black;
+            
+        }
+      #insertData label{
+        color: white;
+      }
+        
         
         
         
