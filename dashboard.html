@@ -71,7 +71,35 @@
         <div id="dailyspend">
             <img src="./totalspend.png" alt=""height="400px" width="400px">
         </div>
+       
+
     </section>
+    se
+     <div id="secondrow" style="display: flex; margin-top: 30px; gap: 60px;">
+        <div style="width: 300px; height: 300px;  border: 1ps solid rgba(135, 130, 130, 0.5); gap: 20px;">
+       <canvas id="workingHoursChart"></canvas>
+      </div>
+      <div id="transaction" style="background-color: rgba(101, 101, 101, 0.4); border: 1px solid rgba(135, 130, 130, 0.5) ; border-radius: 12px;">
+        <div id="search" style="display: flex; gap: 30px; ">
+            <h3 style="color: white; ">Transactions</h3>
+        <button>INSERT</button> </div>
+        <table style="margin-top: 20px;" >
+            <thead>
+                <th>Receiver</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Ammount</th>
+                <th>Type</th>
+                <th>Action</th>
+                
+            </thead>
+            <tbody id="output"></tbody>
+        </table>
+      </div>
+      </div>
+      <div id="editable"></div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <script src="./script.js"></script>
 </body>
 </html>

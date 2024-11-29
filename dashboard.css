@@ -8,6 +8,9 @@
             padding-top: 10px;
             border-radius: 20px;
             align-items: center;
+            border: 1px solid rgba(76, 75, 75, 0.5);
+
+
             
         }
         #navbar #nav1{
@@ -68,6 +71,7 @@
             width: 300px;
             border-radius: 20px;
             padding-left: 40px;
+              border: 1px solid rgba(76, 75, 75, 0.5);
         }
         #ammount #heading {
             display: flex;
@@ -112,18 +116,19 @@
         
         }
         #graph #stats{
-        
+         border: 2px solid rgba(76, 75, 75, 0.5);
                 width: 450px; 
             height: 300px;
             overflow: hidden; 
             position: relative;
             border-radius: 20px;
             margin-top: 20px;
+            
         }
         #stats img{
             width: 450px;
             height: 100%;
-            
+             
             display: block
         }
         #dailyspend{
@@ -133,14 +138,30 @@
             position: relative;
             border-radius: 20px;
             margin-top: 20px; 
+             border: 2px solid rgba(76, 75, 75, 0.5);
+            
         }
-        /* #dailyspend img{
-            width: 450px;
-            height: 100%;
-            object-fit: contain;
-            display: block;
-            border-radius: 20px;
-        } */
+        table th{
+            width: 200px;
+            color: beige;
+            border: none;
+             
+        }
+        table img{
+            padding-left: -20px;
+        }
+        tr{
+            border-bottom: 1px solid rgba(76, 75, 75, 0.5) ;
+            color: white;
+        
+        }
+        table{
+           border: 1px solid rgba(76, 75, 75, 0.5) ; 
+         
+        }
+        td{
+              padding-left: 50px; 
+        }
         
         
         
