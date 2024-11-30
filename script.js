@@ -175,6 +175,14 @@ async function updateData(id){
     })
     .then(res=>alert("inserted...!!!!!!"))
 }
+
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav2");
+
+// Toggle the navigation menu visibility
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
      
 
 

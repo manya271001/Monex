@@ -175,7 +175,7 @@
 
         tr{
             margin-top: 20px;
-            border-bottom: 1px solid rgba(76, 75, 75, 0.5) ;
+            border-bottom: 1px solid rgba(76, 75, 75, 0.5);
             color: white;
         
         }
@@ -250,6 +250,47 @@
         transform: translateY(-3px);
         transition: all 0.3s ease-in-out;
 }
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+   
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        width: 700px;
+        
+    }
+
+    #nav2 {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        align-items: center;
+    }
+
+    #nav2.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #graph {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-left: 140px;
+    }
+
+    #secondrow {
+        grid-template-columns: 1fr;
+    }
+}
+
+
    
         
         

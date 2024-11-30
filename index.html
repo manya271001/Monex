@@ -15,11 +15,11 @@
         <h3>WELCOME TO MONEX!!!</h3>
     <form action="./login.html">
         <label for="">Name</label> <br>
-        <input type="text" id="name"> <br>
+        <input type="text" id="name" required minlength="3"> <br>
         <label for="">Email</label> <br>
-        <input type="email" name="" id="email"> <br>
+        <input type="email" name="" id="email" required> <br>
         <label for="">Passowrd</label> <br>
-        <input type="text" id="pass"> <br>
+        <input type="text" id="pass" required minlength="6"> <br>
          <button type="submit" onclick="signup()">Create Account</button>
 
     </form>
