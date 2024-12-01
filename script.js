@@ -31,7 +31,7 @@ async function fet(){
          <tr width="200px" style="margin-top:20px">
             <td style="display:flex; gap:10px"><img src="${t.img}" alt="" height="20px" width="20px" style=" border-radius: 50%;"> ${t.recv}</td>
             <td>${t.date}</td>
-            <td style="color:${getStatusColor(t.status)}">${t.status}</td>
+            <td style="color:${StatusColor(t.status)}">${t.status}</td>
             <td>${t.price}</td>
             <td>${t.type}</td>
             <td> <button onclick="mydelete('${t.id}')">DELETE</button>  <button onclick="updateData('${t.id}')">EDIT</button></td>
@@ -42,7 +42,7 @@ async function fet(){
 
 }
 fet()
-function getStatusColor(status) {
+function StatusColor(status) {
     switch (status.toLowerCase()) {
         case 'completed':
             return 'green';
@@ -147,14 +147,18 @@ function nodisplay(){
       let nav = document.querySelector("#navbar");
     nav.style.display="none"
 }
-document.addEventListener("click", function(event) {
-    if (window.innerWidth <= 768){
-    let nav = document.querySelector("#navbar");
-    let hamburger = document.querySelector("#hamburger");
-    if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
-        nav.style.display = "none";  
-    }}
-});
+function hideNavbar(event) {
+    if (window.innerWidth <= 768) {
+        let nav = document.querySelector("#navbar");
+        let hamburger = document.querySelector("#hamburger");
+        
+        if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
+            nav.style.display = "none";
+        }
+    }
+}
+
+document.onclick = hideNavbar;
   function hideEditableForm(event) {
         let editableForm = document.querySelector("#editable");
         
