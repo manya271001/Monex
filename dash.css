@@ -1,0 +1,218 @@
+body{
+            background-color: black;
+        }
+        #dashboard{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+          gap: 80px;
+        }
+        #navbar{
+            grid-row: 1/3;
+             background-color: rgba(48, 48, 48, 0.5);
+            display: flex;
+            flex-direction: column;
+            padding-left: 30px;
+            padding-top: 10px;
+            border-radius: 20px;
+            gap: 150px;
+            width: 150px;
+            align-items: flex-start;
+            border: 1px solid rgba(76, 75, 75, 0.5);
+            
+            
+        }
+        #navbar a{
+            color: white;
+            text-decoration: none;
+        }
+        #navbar a:hover{
+            text-decoration: underline;
+            color: rgb(244, 213, 193);
+            transform: scale(1.1);
+            transition: all 0.5s ease-in-out;
+        }
+
+        #nav1 img{
+            height: 50px;
+            width: 50px;
+        }
+        #nav3 img{
+            height: 50px;
+            width: 50px;
+        }
+        #nav2{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+        #nav3{
+            display: flex;
+            justify-content: center;
+            align-items: center; gap: 20px;
+            padding-left: -20px;
+        }
+        #card1 img{ 
+            width: 450px; 
+            height: 300px;
+            border: 3px solid rgba(76, 75, 75, 0.5);
+            border-radius: 12px;
+
+        }
+        #card2 img{
+            width: 450px; 
+            height: 300px;
+            border: 3px solid rgba(76, 75, 75, 0.5);
+            border-radius: 12px;
+        } 
+        #card1{
+            width: 450px; 
+            height: 300px;
+            margin-left: -60px;
+            
+        } 
+        #card2{
+            width: 450px; 
+            height: 300px;
+            margin-right: 20px;
+            
+        } 
+         #card3 img{
+            width: 450px; 
+            height: 300px;
+            border: 3px solid rgba(76, 75, 75, 0.5);
+            border-radius: 12px;
+        } 
+        #card3{
+            width: 450px; 
+            height: 350px;
+            
+            margin-top: -20px;
+            
+        }     
+         #ammount {
+            background-color: rgba(48, 48, 48, 0.5);
+            margin-top: -20px;
+            height: 300px;
+            width: 355px;
+            border-radius: 20px;
+            padding-left: 40px;
+            margin-left: -40px;
+              border: 1px solid rgba(76, 75, 75, 0.5);
+        }
+        #ammount #heading {
+            display: flex;
+            color: white;
+            gap: 80px;
+            align-items: center;
+            
+        }
+        #ammount #heading #cards{
+            background-color: rgba(101, 101, 101, 0.4);
+            width: 80px;
+            color: white;
+            border-radius: 12px;
+
+        }
+        #ammount #cvv{
+            background-color: rgb(31, 100, 31);
+            color: white;
+            padding-left: 2px;
+            width: 50px;
+            font-size: larger;
+            border-radius: 12px;
+        }
+        #detail{
+            display: flex; 
+            gap: 20px;
+            color: white;
+            font-size: small;
+        }
+        .detail{
+            color: gray;
+             font-size: smaller; 
+        }
+        .value{
+            color: white;
+             font-size: smaller; 
+        }
+        #info{
+            display: flex;
+            flex-direction: column;
+            font-size: smaller; 
+        
+        } 
+        #hamburger{
+            display: none;
+        }
+        @media (max-width: 768px) {
+            /* #navbar{
+                display: none;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                padding: 20px 10px;
+                gap: 50px;
+            }
+            #hamburger{
+                display: block;
+                color: white;
+                position: absolute;
+                top: 30px;
+                left: 10px;
+                font-size: 30px;
+                 z-index: 200;
+            } */
+       #navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 20%;
+        background-color: rgba(48, 48, 48, 0.9);
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+        padding: 20px;
+        z-index: 100;
+        border-right: 2px solid rgba(76, 75, 75, 0.8);
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+         transform: translateX(0);
+        transition: transform 30s linear;
+       
+    }
+
+    #hamburger {
+        display: block;
+        color: white;
+        position: fixed;
+        top: 20px;
+        left: 10px;
+        font-size: 30px;
+        z-index: 200;
+        cursor: pointer;
+    }
+
+            #dashboard{
+                
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-content: center;
+                align-items: center;
+                margin-left: 60px;
+            }
+            #card1{
+                margin-left: 50px;
+            }
+             #card2{
+                margin-left: 50px;
+            }
+             #card3{
+                margin-left: 50px;
+            }
+             #ammount{
+                margin-left: 50px;
+                width: 430px;
+            }
+
+        }

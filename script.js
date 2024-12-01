@@ -20,47 +20,7 @@ function login(){
     return false
 }
 
-    const ctx = document.getElementById('workingHoursChart').getContext('2d');
-    const workingHoursChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-            labels: ['Salary', 'Expenditure', 'Saving'],
-            datasets: [{
-                data: [2, 5, 3], // Replace with dynamic values if needed
-                backgroundColor: ['#cccccc', '#88c0d0', '#5e81ac'], // Colors matching the legend
-                borderWidth: 0
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: {
-                    display: false
-                },
-                tooltip: {
-                    enabled: false
-                }
-            },
-            cutout: '55%' // Adjust to control the inner radius
-        }
-    });
-
-    // Add a central text in the middle of the doughnut chart
-    Chart.register({
-        id: 'textCenter',
-        beforeDraw(chart) {
-            const { width } = chart;
-            const { ctx } = chart;
-            ctx.save();
-            ctx.font = 'bold 16px Arial';
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'middle';
-            ctx.fillStyle = 'white';
-            const text = '$32,440.90';
-            ctx.fillText(text, width / 2, chart.chartArea.top + (chart.chartArea.bottom - chart.chartArea.top) / 2);
-        }
-    });
-
+    
 // CRUD OPERATIONS
 
 // TO READ DATA
@@ -109,12 +69,11 @@ async function mydelete(id){
      .then(res=>alert("delete sucessfull ....!!!"))
 }
 
-// 
+// UPDATE DATA
 async function updateData(id){
     let data = await fetch(`http://localhost:3000/Transaction/${id}`)
     let newdata = await data.json()
     let selectedData=`
-    
       <input type="text"  value="${newdata.id}" readonly> <br>
      <input type="text"  id="img1" value="${newdata.img}"> <br>  
        <input type="text"  id="rev1" value="${newdata.recv}"> <br>
@@ -122,12 +81,13 @@ async function updateData(id){
      <input type="text"  id="status1" value="${newdata.status}"> <br>
      <input type="text"  id="price1" value="${newdata.price}"> <br>
      <input type="text"  id="type1" value="${newdata.type}"> <br>
-     <input type="submit" onclick="finalUpDate('${newdata.id}')" style="background-color: black;
-            color: rgb(53, 156, 200); padding: 20px 70px; border-radius:12px" margin-left:"30px "> <br>
+     <input type="submit" onclick="finalUpDate('${newdata.id}')" id="btn"> <br>
      
 
-      `  
-      document.querySelector("#editable").innerHTML=selectedData
+      ` 
+       const editableSection = document.querySelector("#editable");
+    editableSection.innerHTML = selectedData;
+    editableSection.style.display = "block";
      }
 
      function finalUpDate(id){
@@ -176,13 +136,29 @@ async function updateData(id){
     .then(res=>alert("inserted...!!!!!!"))
 }
 
-const hamburger = document.getElementById("hamburger");
-const navMenu = document.getElementById("nav2");
 
-// Toggle the navigation menu visibility
-hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
+
+  //   
+function display(){
+    let nav = document.querySelector("#navbar");
+    nav.style.display="block"
+}
+function nodisplay(){
+      let nav = document.querySelector("#navbar");
+    nav.style.display="none"
+}
+document.addEventListener("click", function(event) {
+    let nav = document.querySelector("#navbar");
+    let hamburger = document.querySelector("#hamburger");
+    if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
+        nav.style.display = "none";  
+    }
 });
-     
-
-
+  function hideEditableForm(event) {
+        let editableForm = document.querySelector("#editable");
+        
+        if (!editableForm.contains(event.target) && editableForm.style.display === "block") {
+            editableForm.style.display = "none";  
+        }
+    }
+    document.onclick = hideEditableForm;

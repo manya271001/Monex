@@ -41,6 +41,7 @@
             border: none;
             border-bottom: 1px solid beige;
             margin: 10px 0px;
+            color: white;
         }
         #loginPage button{
             background-color: rgb(66, 65, 65);

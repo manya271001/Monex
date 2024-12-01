@@ -34,6 +34,7 @@
             border: none;
             border-bottom: 1px solid beige;
             margin: 10px 0px;
+            color: white;
         }
         #sign #leftside button{
             background-color: rgb(66, 65, 65);
@@ -74,3 +75,10 @@
             color: beige;
             padding-left: 20px;
         }
+ @media (max-width: 768px){
+  
+    #sign{
+       height: 100%;
+       width: 100%;
+    }
+ }

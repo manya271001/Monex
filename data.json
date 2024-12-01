@@ -19,15 +19,6 @@
       "id": "aa46"
     },
     {
-      "img": "./spotify.png",
-      "recv": "Spotify",
-      "date": "13 Nov 2024 07:20pm",
-      "status": "Pending",
-      "price": "$9.99",
-      "type": "Subscription",
-      "id": "6973"
-    },
-    {
       "img": "./amazon.png",
       "recv": "Amazon",
       "date": "12 Nov 2024 05:45pm",
@@ -114,7 +105,8 @@
       "date": "01 Nov 2024 07:30pm",
       "status": "completed",
       "price": "$20.0",
-      "type": "Food"
+      "type": "Food",
+      "id": "bd97"
     },
     {
       "img": "./microsoft.png",
@@ -122,7 +114,8 @@
       "date": "31 Oct 2024 03:15pm",
       "status": "completed",
       "price": "$99.0",
-      "type": "Subscription"
+      "type": "Subscription",
+      "id": "2a01"
     },
     {
       "img": "./yt.png",
@@ -130,7 +123,8 @@
       "date": "30 Oct 2024 12:10pm",
       "status": "pending",
       "price": "$11.99",
-      "type": "Subscription"
+      "type": "Subscription",
+      "id": "9004"
     },
     {
       "img": "./flipkart.png",
@@ -138,16 +132,8 @@
       "date": "29 Oct 2024 02:50pm",
       "status": "completed",
       "price": "$230.0",
-      "type": "Shopping"
-    },
-    {
-      "id": "eccc",
-      "img": "./medical.png",
-      "recv": "Hospital",
-      "date": "22 Nov 2024 10:00pm",
-      "status": "Completed",
-      "price": "$50.9",
-      "type": "Health"
+      "type": "Shopping",
+      "id": "f1ec"
     }
   ]
 }

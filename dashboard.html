@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-     <link rel="stylesheet" href="dashboard.css">
-     
-    <title>dashboard</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="dash.css">
+ 
+    <title>Dashboard</title>
 </head>
 <body>
-    <!-- navbar section  -->
-    <section id="navbar">
-        <div id="nav1">
-            <a href="./dashboard.html"><img src="./logo.png" alt=""></a>
-            <a href="./dashboard.html">m<span style="color: green;">o</span>nex</a>  </div>
-           <div id="nav2">
-            <a href="dashboard.html">Dashboard</a>
-            <a href="#secondrow">Analytics</a>
-            <a href="#transaction">Transactions</a>
-            </div>
-            <div id="nav3">
-                <i class="fa-solid fa-bell" style="color: white;"></i>
-               <img src="./profile.png" alt="">
+    <section id="dashboard">
+        <div id="hamburger">
+                    <i class="fa-solid fa-bars" id="bar" onclick="display()" ondblclick="nodisplay()"></i>
+                 </div>
+        <div id="navbar">
+            <div id="nav1" style="display: flex; justify-content: center; align-items: center; gap: 10px; margin-left: -20px;">
+                 <a href="./dashboard.html"><img src="./logo.png" alt=""></a>
+                 <a href="./dashboard.html">m<span style="color: green;">o</span>nex </a>
+                 
+             </div>
+                <div id="nav2">
+                      <a href="dashboard.html">Dashboard</a>
+            <a href="./Transactions.html">Transactions</a>
+            <a href="./insert.html">Insert Data</a>
+        </div>
+        
+                <div id="nav3">
+               <img src="./profile.png" alt=""> 
                 <div id="profile">
-                    <h4 style="color: white;">Account</h4>
-                    <p style="color: grey; margin-top: -20px;" >Manya Sharma</p>
+                    <p style="color: grey;" >Manya Sharma</p>
+                    <a href=""><i class="fa-solid fa-right-from-bracket"></i>LogOut</a>
                 </div>
             </div>
-            <div class="hamburger" id="hamburger">
-        <i class="fa fa-bars" style="color: white; display: none;"></i>
-    </div>
-       
-    </section>
-    <!-- Dashboard section -->
-    <section id="graph">
-        <div id="ammount">
+        </div>
+
+            <div id="card1">
+                <img src="./stats.png" alt="">
+            </div>
+            <div id="card2">
+                <img src="./totalspend.png" alt="">
+            </div>
+
+             <div id="ammount">
             <div id="heading">
                 <h2>Balance</h2>
            
@@ -68,56 +75,11 @@
                  </div>
              </div>
         </div>
-        <div id="stats" style="margin-left: -50px;">
-            <img src="./stats.png" alt="" >
+        <div id="card3">
+            <img src="./pie_chart_dark_dashboard.png" alt="">
         </div>
-        <div id="dailyspend">
-            <img src="./totalspend.png" alt=""height="400px" width="400px">
-        </div>
-       
-
+            
     </section>
-    se
-     <div id="secondrow" style="display: flex; margin-top: 30px; gap: 60px;">
-        <div style="width: 300px; height: 300px;  border: 1ps solid rgba(135, 130, 130, 0.5); gap: 20px;">
-       <canvas id="workingHoursChart"></canvas>
-      </div>
-      <div id="transaction" style="background-color: rgba(101, 101, 101, 0.4); border: 1px solid rgba(135, 130, 130, 0.5) ; border-radius: 12px;">
-        <div id="search" style="display: flex; gap: 630px; ">
-            <h3 style="color: white; text-transform: uppercase; text-align: center;">Transactions</h3>
-        <button onclick="insertform()" id="btn">INSERT</button> </div>
-        <table style="margin-top: 20px;" >
-            <thead>
-                <th>Receiver</th>
-                <th>Date</th>
-                <th>Status</th>
-                <th>Ammount</th>
-                <th>Type</th>
-                <th>Action</th>
-                
-            </thead>
-            <tbody id="output" style="margin-top: 30px;"></tbody>
-        </table>
-      </div>
-      </div>
-      <form action="" id="editable"></form>
-      <form action="" id="insertData" style="display: none;">
-          <label for="">Image url</label>
-         <input type="text"  id="image"> <br><br>
-          <label for="">Receiver</label>
-         <input type="text"  id="rec"> <br><br> 
-          <label for="">Date</label>
-         <input type="text"  id="Date"> <br><br>
-          <label for="">Status</label>
-         <input type="text"  id="Status2"> <br><br>
-          <label for="">Ammount</label>
-         <input type="text"  id="amt"> <br><br>
-          <label for="">Type</label>
-         <input type="text"  id="type2"> <br><br>
-         <button onclick="submitData()"  id="btn">SUBMIT</button>
-      </form>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <script src="./script.js"></script>
 </body>
 </html>
