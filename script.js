@@ -147,23 +147,19 @@ function nodisplay(){
       let nav = document.querySelector("#navbar");
     nav.style.display="none"
 }
-function hideNavbar(event) {
-    if (window.innerWidth <= 768) {
-        let nav = document.querySelector("#navbar");
-        let hamburger = document.querySelector("#hamburger");
-        
-        if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
-            nav.style.display = "none";
-        }
-    }
-}
+document.addEventListener("click", function(event) {
+    if (window.innerWidth <= 768){
+    let nav = document.querySelector("#navbar");
+    let hamburger = document.querySelector("#hamburger");
+    if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
+        nav.style.display = "none";  
+    }}
+});
 
-document.onclick = hideNavbar;
-  function hideEditableForm(event) {
-        let editableForm = document.querySelector("#editable");
-        
-        if (!editableForm.contains(event.target) && editableForm.style.display === "block") {
-            editableForm.style.display = "none";  
-        }
+document.addEventListener("click", function(event) {
+    let editableForm = document.querySelector("#editable");
+
+    if (!editableForm.contains(event.target) && editableForm.style.display === "block") {
+        editableForm.style.display = "none";  
     }
-    document.onclick = hideEditableForm;
+});
