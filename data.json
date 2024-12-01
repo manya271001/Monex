@@ -1,7 +1,7 @@
 {
   "Transaction": [
     {
-      "img": "./netflix.png",
+      "img": "./images/netflix.png",
       "recv": "Netflix",
       "date": "12 Nov 2024 11:34pm",
       "status": "Completed",
@@ -10,7 +10,7 @@
       "id": "922b"
     },
     {
-      "img": "./adobe.png",
+      "img": "./images/adobe.png",
       "recv": "Adobe",
       "date": "14 Nov 2024 09:15am",
       "status": "Completed",
@@ -19,7 +19,7 @@
       "id": "aa46"
     },
     {
-      "img": "./amazon.png",
+      "img": "./images/amazon.png",
       "recv": "Amazon",
       "date": "12 Nov 2024 05:45pm",
       "status": "Completed",
@@ -28,7 +28,7 @@
       "id": "38f5"
     },
     {
-      "img": "./starbucks.png",
+      "img": "./images/starbucks.png",
       "recv": "Starbucks",
       "date": "11 Nov 2024 08:30am",
       "status": "Rejected",
@@ -37,7 +37,7 @@
       "id": "b797"
     },
     {
-      "img": "./uberEats.png",
+      "img": "./images/uberEats.png",
       "recv": "Uber Eat",
       "date": "10 Nov 2024 06:45pm",
       "status": "Pending",
@@ -46,7 +46,7 @@
       "id": "8954"
     },
     {
-      "img": "./lyft.png",
+      "img": "./images/lyft.png",
       "recv": "Lyft",
       "date": "09 Nov 2024 11:30am",
       "status": "Completed",
@@ -55,7 +55,7 @@
       "id": "a083"
     },
     {
-      "img": "./apple.png",
+      "img": "./images/apple.png",
       "recv": "Apple",
       "date": "08 Nov 2024 04:25pm",
       "status": "Completed",
@@ -64,7 +64,7 @@
       "id": "ff09"
     },
     {
-      "img": "./googleCloud.png",
+      "img": "./images/googleCloud.png",
       "recv": "Google Cloud",
       "date": "07 Nov 2024 01:00pm",
       "status": "Completed",
@@ -73,7 +73,7 @@
       "id": "f3c7"
     },
     {
-      "img": "./airbnb.png",
+      "img": "./images/airbnb.png",
       "recv": "Airbnb",
       "date": "06 Nov 2024 03:40pm",
       "status": "Pending",
@@ -82,7 +82,7 @@
       "id": "7307"
     },
     {
-      "img": "./hotstar.png",
+      "img": "./images/hotstar.png",
       "recv": "Disney+",
       "date": "05 Nov 2024 10:15am",
       "status": "Completed",
@@ -91,7 +91,7 @@
       "id": "ec57"
     },
     {
-      "img": "./adidas.png",
+      "img": "./images/adidas.png",
       "recv": "Adidas",
       "date": "04 Nov 2024 02:25pm",
       "status": "Completed",
@@ -100,7 +100,7 @@
       "id": "6622"
     },
     {
-      "img": "./zomato.png",
+      "img": "./images/zomato.png",
       "recv": "Zomato",
       "date": "01 Nov 2024 07:30pm",
       "status": "completed",
@@ -109,7 +109,7 @@
       "id": "bd97"
     },
     {
-      "img": "./microsoft.png",
+      "img": "./images/microsoft.png",
       "recv": "Microsoft",
       "date": "31 Oct 2024 03:15pm",
       "status": "completed",
@@ -118,7 +118,7 @@
       "id": "2a01"
     },
     {
-      "img": "./yt.png",
+      "img": "./images/yt.png",
       "recv": "YouTube Premium",
       "date": "30 Oct 2024 12:10pm",
       "status": "pending",
@@ -127,7 +127,7 @@
       "id": "9004"
     },
     {
-      "img": "./flipkart.png",
+      "img": "./images/flipkart.png",
       "recv": "Flipkart",
       "date": "29 Oct 2024 02:50pm",
       "status": "completed",

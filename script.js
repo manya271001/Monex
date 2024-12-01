@@ -148,11 +148,12 @@ function nodisplay(){
     nav.style.display="none"
 }
 document.addEventListener("click", function(event) {
+    if (window.innerWidth <= 768){
     let nav = document.querySelector("#navbar");
     let hamburger = document.querySelector("#hamburger");
     if (!nav.contains(event.target) && !hamburger.contains(event.target)) {
         nav.style.display = "none";  
-    }
+    }}
 });
   function hideEditableForm(event) {
         let editableForm = document.querySelector("#editable");

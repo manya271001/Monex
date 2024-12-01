@@ -1,5 +1,5 @@
  body{
-            background-image: url('./bg.jpg');
+            background-image: url('./images/bg.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -64,7 +64,7 @@
             color: beige;
         } 
         #sign #right{
-            background-image: url(./signup.png);
+            background-image: url("./images/signup.png");
              background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
