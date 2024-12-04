@@ -1,4 +1,28 @@
 function signup(){
+    let name1 = document.querySelector("#name").value;
+    let email1 = document.querySelector("#email").value;
+    let password1 = document.querySelector("#pass").value;
+    if(name1 ==="")
+    {
+       window.alert("please enter your Name")
+        return false;
+    }
+    else if(email1 === "")
+    {
+       window.alert("please enter email")
+       return false;
+
+    }
+    else if(email1.includes('@') && email1.includes('.com'))
+    {
+       window.alert("please enter email")
+       return false;
+    }
+    else if(password1 === "")
+    {
+       window.alert("please enter Password")
+       return false;
+    }
      
     let obj={
     receivedemail:document.querySelector("#email").value,
@@ -18,6 +42,22 @@ function login(){
         window.alert("wrong password")
     }
 
+    if(newemail === "")
+    {
+       window.alert("please enter email")
+       return false;
+
+    }
+    else if(!(newemail.includes('@') && newemail.includes('.com')))
+    {
+       window.alert("please enter valid email")
+       return false;
+    }
+    else if(newpass === "")
+    {
+       window.alert("please enter Password")
+       return false;
+    }
     return false
 }
 
@@ -107,7 +147,7 @@ async function updateData(id){
             },
             body:JSON.stringify(fdata)
         })
-        .then(r=>alert("updatedd....!!!!"))
+        .then(res=>alert("updatedd....!!!!"))
      }
 
      // INSERT DATA
