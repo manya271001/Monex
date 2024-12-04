@@ -1,4 +1,5 @@
 function signup(){
+     
     let obj={
     receivedemail:document.querySelector("#email").value,
     receivedname:document.querySelector("#name").value,
@@ -138,7 +139,7 @@ async function updateData(id){
 
 
 
-  //   
+  
 function display(){
     let nav = document.querySelector("#navbar");
     nav.style.display="block"
